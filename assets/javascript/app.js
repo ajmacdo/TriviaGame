@@ -1,6 +1,23 @@
 //TRIVIA GAME
 
 //The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+//--> SO - instead of alert, display text to screen that reads, "All done! Correct Answers: __ Incorrect Answers: __ Unanswered: __"
+
+
+//If for q1, user selects Black Rhino, add 1 to "wins" 
+
+//If for q2, user selects Black Rhino, add 1 to "wins" 
+//If for q3, user selects Black Rhino, add 1 to "wins" 
+//If for q4, user selects Black Rhino, add 1 to "wins" 
+//If for q5, user selects Black Rhino, add 1 to "wins" 
+//If for q6, user selects Black Rhino, add 1 to "wins" 
+
+//create variables to hold # of correct, incorrect, and unanswered questions
+var correct = 0;
+var incorrect = 0;
+var unanswered = 0;
+
+//create function so that if user clicks correct answer, 1 point is added to the # of correct; if user clicks wrong answer, 1 point is added to incorrect; if user does not select an answer, 1 point is added to unanswered.
 
 
 
