@@ -17,12 +17,32 @@ var correct = 0;
 var incorrect = 0;
 var unanswered = 0;
 
-//create function so that if user clicks correct answer, 1 point is added to the # of correct; if user clicks wrong answer, 1 point is added to incorrect; if user does not select an answer, 1 point is added to unanswered.
 
+//wrap the below three into an outer function in order to enclose in an if/else? 
+function scoring () {
+
+
+//create function so that if user clicks correct answer, 1 point is added to the # of correct
+$(".correctAns").on("click", function() {
+    correct++;
+console.log("correct");
+  });
+//if user clicks wrong answer, 1 point is added to incorrect
+  $(".incorrectAns").on("click", function() {
+    incorrect++;
+console.log("incorrect");
+  });
+//if user does not select an answer, 1 point is added to unanswered
+  $(".noAns").on("click", function() {
+    unanswered++;
+console.log("unanswered");
+  });
+
+}
+scoring();
 
 
 //insert timer that counts down from 1 and a half mins
-
 //insert functionality so that when time has run out, the page displays how many questions the user got right, how many wrong.
 $(document).ready(function () {
 
