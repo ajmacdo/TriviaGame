@@ -1,54 +1,21 @@
 //TRIVIA GAME
 
+
+//timer stopped displaying after inserted if/else words
+
+
 //The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+
 //--> SO - instead of alert, display text to screen that reads, "All done! Correct Answers: __ Incorrect Answers: __ Unanswered: __"
 
 
-//If for q1, user selects Black Rhino, add 1 to "wins" 
 
-//If for q2, user selects Black Rhino, add 1 to "wins" 
-//If for q3, user selects Black Rhino, add 1 to "wins" 
-//If for q4, user selects Black Rhino, add 1 to "wins" 
-//If for q5, user selects Black Rhino, add 1 to "wins" 
-//If for q6, user selects Black Rhino, add 1 to "wins" 
-
-//create variables to hold # of correct, incorrect, and unanswered questions
-var correct = 0;
-var incorrect = 0;
-var unanswered = 0;
-
-
-//wrap the below three into an outer function in order to enclose in an if/else? 
-function scoring () {
-
-
-//create function so that if user clicks correct answer, 1 point is added to the # of correct
-$(".correctAns").on("click", function() {
-    correct++;
-console.log("correct");
-  });
-//if user clicks wrong answer, 1 point is added to incorrect
-  $(".incorrectAns").on("click", function() {
-    incorrect++;
-console.log("incorrect");
-  });
-//if user does not select an answer, 1 point is added to unanswered
-  $(".noAns").on("click", function() {
-    unanswered++;
-console.log("unanswered");
-  });
-
-}
-scoring();
-
-
-//insert timer that counts down from 1 and a half mins
+//insert timer that counts down 
 //insert functionality so that when time has run out, the page displays how many questions the user got right, how many wrong.
 $(document).ready(function () {
 
-    //  Set our number counter to 100.
+    //  Set our number counter to 100 (shorter for now)
     var number = 20;
-
     //  Variable that will hold our interval ID when we execute the "run" function
     var intervalId;
 
@@ -72,19 +39,52 @@ $(document).ready(function () {
             //  ...run the stop function.
             stop();
             //  Alert the user that time is up.
-            alert("Time's Up! How'd you do?");
+            $("#end-screen").show();
+            $("#quiz-screen").hide();
+            $("#score").text("My score is " + correct.length)
         }
     }
 
     //  The stop function
     function stop() {
         //  Clears our intervalId
-        //  We just pass the name of the interval
-        //  to the clearInterval function.
+        //  We just pass the name of the interval to the clearInterval function.
         clearInterval(intervalId);
     }
 
     //  Execute the run function.
     run();
 
+
+
+
+    //create variables to hold # of correct, incorrect, and unanswered questions
+    var correct = [];
+  
+
+
+    //wrap the below three into an outer function in order to enclose in an if/else? 
+
+    //If user selects correct answer, add 1 to "correct" 
+    function scoring() {
+
+        //create function so that if user clicks correct answer, 1 point is added to the # of correct
+        $(".correctAns").on("click", function () {
+          var answer = $(this).val()
+            correct.push(answer);
+            console.log(answer);
+        });
+
+        //if user clicks wrong answer, 1 point is added to incorrect
+        $(".incorrectAns").on("click", function () {
+            console.log("incorrect");
+        });
+        //if user does not select an answer, 1 point is added to unanswered
+        //   $(".noAns").on("click", function() {
+        //     unanswered++;
+        // console.log("unanswered");
+        //   });
+
+    }
+    scoring();
 });

@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivia!</title>
-    <!--<link rel="stylesheet" href="style.css">-->
- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Trivia!</title>
+ <link rel="stylesheet" href="/assets/css/style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
 </head>
 
 <body>
 
-<h1>Totally Trivia: Endangered Species</h1>
+  <h1>Totally Trivia: Endangered Species</h1>
 
-<h2>Time Remaining</h2>
-<div id="remaining"></div>
+  
 
-<p>Nearly 600 of this "living fossil" of an animal were killed as a result of poaching in 2019.</p>
-<!--Black Rhino-->
-<input class="incorrectAns" type="radio" name="Q1" value="Komodo Dragon">Komodo Dragon
-<input class="incorrectAns" type="radio" name="Q1" value="Sea Turtle">Sea Turtle
-<input class="correctAns" type="radio" name="Q1" value="Black Rhino">Black Rhino
+  <div id="remaining">
+
+    <h2>Time Remaining</h2>
+  </div>
+
+  <div class="container" id="quiz-screen">
+  <p>Nearly 600 of this "living fossil" of an animal were killed as a result of poaching in 2019.</p>
+  <!--Black Rhino-->
+  <input class="incorrectAns" type="radio" name="Q1" value="Komodo Dragon">Komodo Dragon
+  <input class="incorrectAns" type="radio" name="Q1" value="Sea Turtle">Sea Turtle
+  <input class="correctAns" type="radio" name="Q1" value="Black Rhino">Black Rhino
 
 
-<p>This feline species is able to jump heights over 19 feet high and up to 10 feet vertically.</p>
-<!--Amur Leopard-->
-<input class="incorrectAns" type="radio" name="Q2" value="Komodo Dragon">Komodo Dragon
-<input class="correctAns" type="radio" name="Q2" value="Amur Leopard">Amur Leopard
-<input class="incorrectAns" type="radio" name="Q2" value="Black Rhino">Black Rhino
+  <p>This feline species is able to jump heights over 19 feet high and up to 10 feet vertically.</p>
+  <!--Amur Leopard-->
+  <input class="incorrectAns" type="radio" name="Q2" value="Komodo Dragon">Komodo Dragon
+  <input class="correctAns" type="radio" name="Q2" value="Amur Leopard">Amur Leopard
+  <input class="incorrectAns" type="radio" name="Q2" value="Black Rhino">Black Rhino
 
-<p>This species' population has been halved over the past 60 years, and its habitat also halved, in the past mere 20 years.</p>
-<!--Bornean Orangutan-->
-<input class="incorrectAns" type="radio" name="Q3" value="Komodo Dragon">Komodo Dragon
-<input type="radio" name="Q3" value="Sea Turtle">Sea Turtle
-<input class="correctAns" type="radio" name="Q3" value="Bornean Orangutan">Bornean Orangutan
+  <p>This species' population has been halved over the past 60 years, and its habitat also halved, in the past mere 20
+    years.</p>
+  <!--Bornean Orangutan-->
+  <input class="incorrectAns" type="radio" name="Q3" value="Komodo Dragon">Komodo Dragon
+  <input type="radio" name="Q3" value="Sea Turtle">Sea Turtle
+  <input class="correctAns" type="radio" name="Q3" value="Bornean Orangutan">Bornean Orangutan
 
-<p>Fewer than 3,000 of these majestic giants remain.</p>
-<!--Sumatran Elephants-->
-<input class="correctAns" type="radio" name="Q4" value="Sumatran Elephants">Sumatran Elephants
-<input class="incorrectAns" type="radio" name="Q4" value="Sea Turtle">Sea Turtle
-<input class="incorrectAns" type="radio" name="Q4" value="Black Rhino">Black Rhino
+  <p>Fewer than 3,000 of these majestic giants remain.</p>
+  <!--Sumatran Elephants-->
+  <input class="correctAns" type="radio" name="Q4" value="Sumatran Elephants">Sumatran Elephants
+  <input class="incorrectAns" type="radio" name="Q4" value="Sea Turtle">Sea Turtle
+  <input class="incorrectAns" type="radio" name="Q4" value="Black Rhino">Black Rhino
 
-<p>This species has a crucial relationship with the vitality of coral reefs and sea grass beds, its existence dating back 100 million years.</p>
-<!--Hawksbill Sea Turtle-->
-<input class="correctAns" type="radio" name="Q5" value="Hawksbill Sea Turtle">Hawksbill Sea Turtle
-<input class="incorrectAns" type="radio" name="Q5" value="Sea Turtle">Sea Turtle
-<input class="incorrectAns" type="radio" name="Q5" value="Black Rhino">Black Rhino
+  <p>This species has a crucial relationship with the vitality of coral reefs and sea grass beds, its existence dating
+    back 100 million years.</p>
+  <!--Hawksbill Sea Turtle-->
+  <input class="correctAns" type="radio" name="Q5" value="Hawksbill Sea Turtle">Hawksbill Sea Turtle
+  <input class="incorrectAns" type="radio" name="Q5" value="Sea Turtle">Sea Turtle
+  <input class="incorrectAns" type="radio" name="Q5" value="Black Rhino">Black Rhino
 
-<p>Only recently discovered, it's thought that there are a few hundred of this mammal occupying Vietnam and Laos at most, and a few dozen at minimum.</p>
-<!--Saola-->
-<input class="incorrectAns" type="radio" name="Q6" value="Komodo Dragon">Komodo Dragon
-<input class="incorrectAns" type="radio" name="Q6" value="Sea Turtle">Sea Turtle
-<input class="correctAns" type="radio" name="Q6" value="Saola">Saola
+  <p>Only recently discovered, it's thought that there are a few hundred of this mammal occupying Vietnam and Laos at
+    most, and a few dozen at minimum.</p>
+  <!--Saola-->
+  <input class="incorrectAns" type="radio" name="Q6" value="Komodo Dragon">Komodo Dragon
+  <input class="incorrectAns" type="radio" name="Q6" value="Sea Turtle">Sea Turtle
+  <input class="correctAns" type="radio" name="Q6" value="Saola">Saola
+  <footer>Endangered Species facts derived from the World Wildlife Foundation [insert link]</footer>
+</div>  
 
-<!-- jQuery -->
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <!-- Script -->
- <script src="assets/javascript/app.js"></script>
+  <div class="hide" id="end-screen">
+    <h3 id="score"> Score goes here </h3>
+  </div>
+   <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Script -->
+  <script src="assets/javascript/app.js"></script>
 
 </body>
 
-<footer>Endangered Species facts derived from the World Wildlife Foundation [insert link]</footer>
+
 
 </html>
+
+
+
 
 <!-- You'll create a trivia form with multiple choice or true/false options (your choice).
 
@@ -72,4 +91,3 @@ The game ends when the time runs out. The page will reveal the number of questio
 Don't let the player pick more than one answer per question.
 
 Don't forget to include a countdown timer.-->
-
