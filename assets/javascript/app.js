@@ -8,14 +8,12 @@
 
 //--> SO - instead of alert, display text to screen that reads, "All done! Correct Answers: __ Incorrect Answers: __ Unanswered: __"
 
-
-
 //insert timer that counts down 
 //insert functionality so that when time has run out, the page displays how many questions the user got right, how many wrong.
 $(document).ready(function () {
 
     //  Set our number counter to 100 (shorter for now)
-    var number = 20;
+    var number = 40;
     //  Variable that will hold our interval ID when we execute the "run" function
     var intervalId;
 
@@ -55,13 +53,8 @@ $(document).ready(function () {
     //  Execute the run function.
     run();
 
-
-
-
     //create variables to hold # of correct, incorrect, and unanswered questions
     var correct = [];
-  
-
 
     //wrap the below three into an outer function in order to enclose in an if/else? 
 
