@@ -1,19 +1,23 @@
 
 
 body {
-    background-color: gold;
     padding: 36px;
     background-image: url("https://image.freepik.com/free-vector/green-tropical-leaves-decorative-background_52683-18995.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    width: 960px;
  }
 
 h1, h2, footer {
     background-color: antiquewhite;
+    width: 960px;
+    text-align: center;
+    padding: 32px;
 }
-#quiz-screen.container {
+#quiz-screen.container, h3#score{
     background-color: antiquewhite;
+    width: 960px;
 }
 
 p {
@@ -22,14 +26,6 @@ p {
 
 #end-screen {
     display: none;
-}
-
-h1, h2, footer {
-    text-align: center;
-}
-
-h2, footer {
-    padding: 32px;
 }
 
 footer {
